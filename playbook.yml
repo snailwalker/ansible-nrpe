@@ -1,0 +1,7 @@
+---
+- hosts: '{{target_host}}'
+  remote_user: '{{remote_user}}' 
+  vars:
+   nagios_nrpe_server_allowed_hosts: '{{nagios_nrpe_server_allowed_hosts}}'
+  roles:
+   - ansible-nrpe-server
